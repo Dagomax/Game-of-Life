@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Game of Life</title>
+<script src="GoLscript.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Game of Life</h1>
+	</header>
+	<input type="button" value="Neues Spielfeld" onclick="generate_table()">
+	<input type="button" value="Einzelschritt" OnClick="btnStep()">
+	<input type="button" value="100 Schritte" OnClick="btnStep100()">
+	<div>
+		<p>
+			Anzahl Schritte: <span id="nbsteps"></span>
+		</p>
+		<p>
+			Anzahl aktive Felder: <span id="nbactive"></span>
+		</p>
+	</div>
+	<div id="goltable"></div>
+</body>
+</html>
